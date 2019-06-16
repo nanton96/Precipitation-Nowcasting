@@ -2,6 +2,7 @@ from torch import nn
 import torch
 from nowcasting.config import cfg
 
+
 class ConvLSTM(nn.Module):
     def __init__(self, input_channel, num_filter, b_h_w, kernel_size, stride=1, padding=1):
         super().__init__()
