@@ -7,7 +7,7 @@ from nowcasting.models.encoder import Encoder
 from nowcasting.models.model import EF
 from torch.optim import lr_scheduler
 from nowcasting.models.loss import Weighted_mse_mae
-from nowcasting.train_and_test import train_and_test
+from milan_experiments.train_and_test_milan import train_and_test_milan
 import os
 from experiments.net_params import convlstm_encoder_params, convlstm_forecaster_params
 
@@ -38,4 +38,4 @@ exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=LR_step_size, gamma=
 
 folder_name = os.path.split(os.path.dirname(os.path.abspath(__file__)))[-1]
 
-train_and_test(encoder_forecaster, optimizer, criterion, exp_lr_scheduler, batch_size, max_iterations, test_iteration_interval, test_and_save_checkpoint_iterations, folder_name)
+train_and_test_milan(encoder_forecaster, optimizer, criterion, exp_lr_scheduler, batch_size, max_iterations, test_iteration_interval, test_and_save_checkpoint_iterations, folder_name)

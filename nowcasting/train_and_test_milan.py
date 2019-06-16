@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(0, '../')
 import torch
-from nowcasting.hko.dataloader import HKOIterator
+# from nowcasting.hko.dataloader import HKOIterator
 from nowcasting.config import cfg
 import numpy as np
 from nowcasting.hko.evaluation import HKOEvaluation
@@ -14,7 +14,7 @@ import copy
 from milan_data.dataloaders import 
 
 
-def train_and_test(encoder_forecaster, optimizer, criterion, lr_scheduler, batch_size, max_iterations, test_iteration_interval, test_and_save_checkpoint_iterations, folder_name, probToPixel=None):
+def train_and_test_milan(encoder_forecaster, optimizer, criterion, lr_scheduler, batch_size, max_iterations, test_iteration_interval, test_and_save_checkpoint_iterations, folder_name, probToPixel=None):
     # HKO-7 evaluater and dataloader
     IN_LEN = 12
     OUT_LEN = 6
