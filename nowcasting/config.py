@@ -61,7 +61,7 @@ __C.HKO.EVALUATION.VALID_TIME = 20
 
 # __C.HKO_PD = edict()
 # __C.HKO_PD.ALL = os.path.join(__C.HKO_PD_BASE_PATH, 'hko7_all.pkl')
-# __C.HKO_PD.ALL_09_14 = os.path.join(__C.HKO_PD_BASE_PATH, 'hko7_all_09_14.pkl')
+# __C.HKO_PD.ALL_09_14 = os.path.join(__C.HKO_PD_BASE_PATH, 'h/,.ko7_all_09_14.pkl')
 # __C.HKO_PD.ALL_15 = os.path.join(__C.HKO_PD_BASE_PATH, 'hko7_all_15.pkl')
 # __C.HKO_PD.RAINY_TRAIN = os.path.join(__C.HKO_PD_BASE_PATH, 'hko7_rainy_train.pkl')
 # __C.HKO_PD.RAINY_VALID = os.path.join(__C.HKO_PD_BASE_PATH, 'hko7_rainy_valid.pkl')
