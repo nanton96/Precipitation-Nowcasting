@@ -11,7 +11,7 @@ import os.path as osp
 import os
 import shutil
 import copy
-from milan_data.dataloaders import 
+from milan_data.dataloaders import MilanDataLoader
 
 
 def train_and_test_milan(encoder_forecaster, optimizer, criterion, lr_scheduler, batch_size, max_iterations, test_iteration_interval, test_and_save_checkpoint_iterations, folder_name, probToPixel=None):
