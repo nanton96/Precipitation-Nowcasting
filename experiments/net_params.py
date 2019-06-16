@@ -91,7 +91,7 @@ conv2d_params = OrderedDict({
 # build model
 convlstm_encoder_params = [
     [
-        OrderedDict({'conv1_leaky_1': [1, 8, 7, 5, 1]}), # in_channels=v[0], out_channels=v[1], kernel_size=v[2], stride=v[3],padding=v[4]
+        OrderedDict({'conv1_leaky_1': [1, 8, 7, 5, 1]}), #in_channels, out_channels, kernel_size, stride, padding
         OrderedDict({'conv2_leaky_1': [64, 192, 5, 3, 1]}),
         OrderedDict({'conv3_leaky_1': [192, 192, 3, 2, 1]}),
     ],

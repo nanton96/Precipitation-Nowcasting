@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, '../../')
+sys.path.insert(0, '../')
 import torch
 from nowcasting.config import cfg
 from nowcasting.models.forecaster import Forecaster
