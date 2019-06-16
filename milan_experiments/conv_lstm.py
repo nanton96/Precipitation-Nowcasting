@@ -7,7 +7,7 @@ from nowcasting.models.encoder import Encoder
 from nowcasting.models.model import EF
 from torch.optim import lr_scheduler
 from nowcasting.models.loss import Weighted_mse_mae
-from milan_experiments.train_and_test_milan import train_and_test_milan
+from nowcasting.train_and_test_milan import train_and_test_milan
 import os
 from experiments.net_params import convlstm_encoder_params, convlstm_forecaster_params
 
