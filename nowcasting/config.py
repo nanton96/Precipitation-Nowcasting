@@ -14,7 +14,7 @@ for dirs in ['/home/s1818503/dissertation/save', '/Users/hzzone/Downloads']:
 assert __C.GLOBAL.MODEL_SAVE_DIR is not None
 
 
-# __C.ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+__C.ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 # __C.HKO_DATA_BASE_PATH = os.path.join(__C.ROOT_DIR, 'hko_data')
 
 # for dirs in ['/Users/hzzone/Downloads/HKO-7_data/radarPNG', '/home/hzzone/HKO-7/radarPNG']:

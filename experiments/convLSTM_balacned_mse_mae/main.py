@@ -36,6 +36,7 @@ encoder_forecaster = EF(encoder, forecaster).to(cfg.GLOBAL.DEVICE)
 optimizer = torch.optim.Adam(encoder_forecaster.parameters(), lr=LR)
 exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=LR_step_size, gamma=gamma)
 
-folder_name = os.path.split(os.path.dirname(os.path.abspath(__file__)))[-1]
+# folder_name is the name of parent directory
+folder_name = os.path.split(os.path.dirname(os.path.abspath(__file__)))[-1] 
 
 train_and_test(encoder_forecaster, optimizer, criterion, exp_lr_scheduler, batch_size, max_iterations, test_iteration_interval, test_and_save_checkpoint_iterations, folder_name)

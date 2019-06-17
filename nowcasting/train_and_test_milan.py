@@ -74,7 +74,7 @@ def train_and_test_milan(encoder_forecaster, optimizer, criterion, lr_scheduler,
         lr_scheduler.step()
         train_batch, train_mask, sample_datetimes, _ = \
             train_data.sample(batch_size=batch_size)
-        train_batch = torch.from_numpy(train_batch.astype(np.float32)).to(cfg.GLOBAL.DEVICE) / 255.0
+        train_batch = torch.from_numpy(train_batch.astype(np.float32)).to(cfg.GLOBAL.DEVICE)# / 255.0
         train_data = train_batch[:IN_LEN, ...]
         train_label = train_batch[IN_LEN:IN_LEN + OUT_LEN, ...]
         mask = torch.from_numpy(train_mask[IN_LEN:IN_LEN + OUT_LEN, ...].astype(int)).to(cfg.GLOBAL.DEVICE)
